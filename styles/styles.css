@@ -135,7 +135,7 @@ h2{
     text-shadow: red 1px 0, cyan -1px 0;
 }
 
-@media (max-height: 520px) {
+@media (max-height: 600px) {
     #profile-pic{
         margin: 0;
     }
@@ -145,6 +145,6 @@ h2{
     }
 
     .child{
-        gap: .25rem;
+        gap: .5rem;
     }
 }
