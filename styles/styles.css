@@ -4,147 +4,30 @@
 
 html{
     font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
 }
 
 body{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 400;
-    height: 100svh;
-    margin: 0;
-    color: hsl(229, 23%, 23%);
     background-color: hsl(185, 75%, 39%);
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-    align-items: center;
-    justify-content: center;
-    /* background-size: 100% 100%, 100% 100%; Set the background size for both SVGs */
-    /* background-position: bottom left, bottom right; Position the SVGs at the bottom left and bottom right corners */
-    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 
-.flex{
-    display: flex;
-}
+/* main{
+    
+    height: 100%;
+} */
 
-.card{
-    width: 90%;
-    /* margin: 10vh auto; */
-    border-radius: 18.75px;
-    align-items: center;
-    background-color: #fff;
-    max-width: 375px;
-}
-
-.bio{
-    border-top-right-radius: 18.75px;
-    border-top-left-radius: 18.75px;
-    width: 100%;
-    background-color: #fff;
-    background-image: url(/images/bg-pattern-card.svg);
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-    height: 50vh;
-    background-position: top;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.child{
-    align-items: flex-end;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.bio-data{
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0;
-}
-.bio-data span{
-    font-size: 1.25rem;
-    color:  hsl(227, 10%, 46%);
-}
-p{
-    margin: 0;
-    color:  hsl(227, 10%, 46%);
-}
-
-#profile-pic{
-    width: 35%;
-    margin-top: 75px;
-    border-radius: 100%;
-    border: solid 7.5px #fff;
-    box-shadow: none;
-
-}
-
-.stats{
-    padding: 1rem 2rem;
-    width: 100%;
-    border-top: solid 1px hsl(0, 0%, 59%);
-}
-
-.stat-text{
-    width: 90%;
-    margin-inline: auto;
-    justify-content: space-between;
-}
-
-.stat-text{
-    text-align: center;
-}
-
-.stat-text p{
-    font-size: .75rem;
-}
-
-h2{
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-
-.attribution {
-    font-size: 11px;
-    width: 90%;
-    margin-inline: auto;
+.top {
     position: absolute;
-    top: auto;
-    bottom: 1vh;
-    text-align: center;
+    top: -170px;
+    left: -100px;
+    width: 400px;
 }
 
-.attribution a{
-    color: hsl(228, 45%, 44%);
-}
-
-#user-name{
-    text-decoration: none;
-    font-weight: bold;
-    color: hsl(220, 15%, 35%);
-    font-family: monospace;
-    transition: 0.5s;
-}
-
-#user-name:hover{
-    text-shadow: red 1px 0, cyan -1px 0;
-}
-
-@media (max-height: 600px) {
-    #profile-pic{
-        margin: 0;
-    }
-
-    .bio{
-        gap: 1rem;
-    }
-
-    .child{
-        gap: .5rem;
-    }
+.bottom {
+    position: absolute;
+    width: 400px;
+    right: -80px;
+    bottom: -550px;
 }
